@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    overflow: hidden;
+    background: fixed center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.current_weather{
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center; 
+    margin-top: -10%;
+    height: 300px;
+    width: 230px;
+    background-color: rgba(240, 248, 255,0.5);
+    border-radius: 25px;
+    
+}
+.current_weather .weather_city{
+    
+    font-size: larger;
+    margin-bottom: 10px;
+}
+.current_weather .weather_temp{
+    
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.weather_wind{
+    display: flex;
+    flex-direction: row;
+}
+.weather_wind div{
+    padding: 0 10px;
+}
+.weather_feels{
+    padding: 10px 0;
+}
+.forecast{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 85vh;
+    width: 100%;
+}
+.forecast>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding:0 10px;
+    background-color: rgba(240, 248, 255,0.5);
+    border-radius: 25px;
+}
